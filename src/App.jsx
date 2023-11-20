@@ -9,18 +9,9 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        <Route
-          path="/Frontend-Mentor-Officelite-coming-soon/"
-          element={<Logo />}
-        >
-          <Route
-            path="/Frontend-Mentor-Officelite-coming-soon/"
-            element={<Home />}
-          />
-          <Route
-            path="/Frontend-Mentor-Officelite-coming-soon/singUp"
-            element={<SingUp />}
-          />
+        <Route path="/" element={<Logo />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/singUp" element={<SingUp />} />
         </Route>
       </Routes>
     </div>

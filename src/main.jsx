@@ -7,7 +7,11 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter
+      basename={
+        import.meta.env.DEV ? '/' : '/Frontend-Mentor-Officelite-coming-soon/'
+      }
+    >
       <App />
     </BrowserRouter>
   </React.StrictMode>
