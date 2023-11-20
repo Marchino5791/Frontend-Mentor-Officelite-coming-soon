@@ -1,7 +1,6 @@
 @use '../../mixins.scss' as *;
 
 .singUp {
-  position: relative;
   padding-bottom: 4.45rem;
 
   @include breakpoint('tablet-small') {
