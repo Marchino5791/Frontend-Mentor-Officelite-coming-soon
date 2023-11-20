@@ -29,13 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot top]()
-![Screenshot bottom]()
-![Screenshot inner]()
+![Screenshot top](https://github.com/Marchino5791/Frontend-Mentor-Officelite-coming-soon/blob/main/Screenshot%20top.png)
+![Screenshot bottom](https://github.com/Marchino5791/Frontend-Mentor-Officelite-coming-soon/blob/main/Screenshot%20bottom.png)
+![Screenshot inner](https://github.com/Marchino5791/Frontend-Mentor-Officelite-coming-soon/blob/main/Screenshot%20inner.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Marchino5791/Frontend-Mentor-Officelite-coming-soon](https://github.com/Marchino5791/Frontend-Mentor-Officelite-coming-soon)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
