@@ -1,0 +1,71 @@
+@use '../../mixins.scss' as *;
+
+header {
+  margin-top: 1.5rem;
+
+  @include breakpoint('tablet-small') {
+    margin-inline: 2.5rem;
+  }
+
+  @include breakpoint('desktop') {
+    @include max-width;
+    width: var(--desktop-width);
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include max-width;
+
+    @include breakpoint('tablet') {
+      flex-direction: row-reverse;
+    }
+
+    &__text {
+      text-align: center;
+
+      @include breakpoint('tablet') {
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        color: hsla(var(--primary-text), 1);
+
+        @include breakpoint('desktop') {
+          font-size: 3.5rem;
+          line-height: 4rem;
+        }
+      }
+
+      p {
+        margin-top: 1.5rem;
+        line-height: 1.625rem;
+        color: hsla(var(--primary-text), 1);
+
+        @include breakpoint('desktop') {
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+        }
+      }
+
+      button {
+        box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.25);
+        background-color: hsla(var(--accent), 1);
+        color: #ffffff;
+        margin-top: 1.5rem;
+
+        @include breakpoint('desktop') {
+          margin-top: 2rem;
+        }
+
+        &:hover {
+          background-color: hsla(var(--accent), 0.6);
+        }
+      }
+    }
+  }
+}

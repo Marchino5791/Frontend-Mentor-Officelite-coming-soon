@@ -1,0 +1,64 @@
+@use '../../mixins.scss' as *;
+
+main {
+  padding: 6.25rem 1.5rem;
+  // inline 1.5rem
+  position: relative;
+
+  @include breakpoint('tablet-small') {
+    padding: 8.75rem 2.5rem 6.25rem;
+    //in 2.5rem
+  }
+
+  @include breakpoint('desktop') {
+    padding: 11.5rem 0 6.25rem;
+  }
+
+  .card-container {
+    position: relative;
+    display: grid;
+    gap: 2rem;
+    z-index: 1000;
+    // for desktop
+
+    @include max-width;
+
+    @include breakpoint('desktop') {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.825rem;
+      width: var(--desktop-width);
+    }
+  }
+
+  .background {
+    background-color: var(--bg-footer);
+    background-image: url('../../assets/home/bg-pattern-footer.svg');
+    background-origin: padding-box;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 150%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 42%;
+    z-index: 100;
+
+    @include breakpoint('tablet-small') {
+      background-size: 250%;
+      background-position-y: 0%;
+    }
+
+    @include breakpoint('tablet') {
+      top: 40%;
+      background-size: 200%;
+    }
+
+    @include breakpoint('desktop') {
+      background-position-x: 112%;
+      background-size: 145%;
+      background-position-y: 43%;
+    }
+  }
+}

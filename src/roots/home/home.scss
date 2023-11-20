@@ -1,0 +1,17 @@
+@use '../../mixins.scss' as *;
+
+.home {
+  main {
+    footer {
+      width: var(--desktop-width);
+      .coming-section {
+        &__date {
+          @include breakpoint('desktop') {
+            margin-bottom: 0;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

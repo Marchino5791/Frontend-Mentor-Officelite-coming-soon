@@ -1,0 +1,24 @@
+@use '../../mixins.scss' as *;
+
+.logo-container {
+  margin: 0 1.5rem 5rem;
+  padding-top: 2.875rem;
+
+  display: grid;
+  justify-items: center;
+
+  @include breakpoint('tablet-small') {
+    margin: 0 2.5rem 6.5rem;
+    padding-top: 4.5rem;
+  }
+
+  @include breakpoint('tablet') {
+    justify-items: start;
+  }
+
+  @include breakpoint('desktop') {
+    padding-top: 5rem;
+    @include max-width;
+    width: var(--desktop-width);
+  }
+}

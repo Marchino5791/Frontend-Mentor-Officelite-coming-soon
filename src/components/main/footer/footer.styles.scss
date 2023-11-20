@@ -1,0 +1,27 @@
+@use '../../../mixins.scss' as *;
+
+footer {
+  position: relative;
+  z-index: 1000;
+  color: #fff;
+  margin-top: 6.25rem;
+  text-align: center;
+
+  @include max-width;
+
+  @include breakpoint('desktop') {
+    margin-top: 5.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button {
+    background-color: hsla(var(--accent), 1);
+    color: #ffffff;
+
+    &:hover {
+      background-color: hsla(var(--accent), 0.5);
+    }
+  }
+}

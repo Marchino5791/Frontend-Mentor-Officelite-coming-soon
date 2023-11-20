@@ -1,0 +1,137 @@
+@use '../../mixins.scss' as *;
+
+.singUp {
+  position: relative;
+  padding-bottom: 4.45rem;
+
+  @include breakpoint('tablet-small') {
+    padding-bottom: 7.87rem;
+  }
+
+  @include breakpoint('desktop') {
+    @include max-width;
+    display: flex;
+    align-items: center;
+    gap: 7.81rem;
+    position: unset;
+    padding-bottom: 17.44rem;
+    width: var(--desktop-width);
+  }
+
+  &__head {
+    header {
+      @include breakpoint('desktop') {
+        padding-inline: 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      .title-container {
+        @include breakpoint('desktop') {
+          margin-inline: 0;
+          width: 100% !important;
+        }
+
+        &__text {
+          @include breakpoint('desktop') {
+            text-align: left !important;
+          }
+        }
+      }
+    }
+
+    .coming-section {
+      &__date {
+        @include breakpoint('tablet') {
+          margin-bottom: 0.5rem;
+        }
+
+        @include breakpoint('desktop') {
+          text-align: left;
+        }
+      }
+
+      &__timer {
+        @include breakpoint('desktop') {
+          justify-content: start;
+        }
+      }
+    }
+  }
+
+  .background {
+    position: absolute;
+    background-color: var(--bg-footer);
+    background-image: url('../../assets/sign-up/bg-pattern-side.svg');
+    background-repeat: no-repeat;
+    background-size: 400%;
+    background-position: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 73%;
+    z-index: 0;
+
+    @include breakpoint('tablet-small') {
+      background-size: 300%;
+      top: 68%;
+    }
+
+    @include breakpoint('tablet') {
+      background-size: 195%;
+      top: 66%;
+    }
+
+    @include breakpoint('desktop') {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 70%;
+      background-size: 400%;
+      background-position-x: 47%;
+      background-position-y: 88%;
+    }
+  }
+
+  header {
+    .title-container {
+      @include breakpoint('tablet-small') {
+        width: 95%;
+        margin-inline: auto;
+      }
+
+      @include breakpoint('tablet') {
+        width: 85%;
+        margin-inline: auto;
+      }
+
+      &__text {
+        text-align: center;
+      }
+    }
+  }
+
+  .coming-section {
+    margin-block: 4rem;
+
+    @include breakpoint('tablet') {
+      margin-block: 2.5rem 6.5rem;
+    }
+
+    @include breakpoint('desktop') {
+      margin-block: 2.5rem 0;
+    }
+
+    .box {
+      background-color: hsla(var(--accent), 0.1);
+
+      &__number {
+        color: hsla(var(--accent, 1));
+      }
+
+      &__text {
+        color: hsla(var(--secondary-text), 1);
+      }
+    }
+  }
+}

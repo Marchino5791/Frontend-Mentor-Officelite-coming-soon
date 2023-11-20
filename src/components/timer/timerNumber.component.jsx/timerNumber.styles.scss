@@ -1,0 +1,31 @@
+@use '../../../mixins.scss' as *;
+
+.box {
+  background-color: hsla(var(--primary-text), 1);
+  border-radius: 0.25rem;
+  padding: 0.625rem 1rem;
+
+  @include breakpoint('tablet-small') {
+    padding: 1rem;
+    border-radius: var(--card-radius);
+  }
+
+  &__number {
+    font-size: 2rem;
+    line-height: 3rem;
+
+    @include breakpoint('tablet-small') {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 0.75rem;
+    line-height: 1.75rem;
+
+    @include breakpoint('tablet-small') {
+      font-size: 1rem;
+    }
+  }
+}

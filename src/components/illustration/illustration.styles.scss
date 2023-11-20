@@ -1,0 +1,21 @@
+@use '../../mixins.scss' as *;
+
+.title-container__img {
+  flex: 50%;
+
+  img {
+    width: 55%;
+    margin-inline: auto;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint('tablet') {
+      width: 100%;
+      padding-left: 4rem;
+      margin-bottom: 0;
+    }
+
+    @include breakpoint('desktop') {
+      padding-left: 5.9375rem;
+    }
+  }
+}

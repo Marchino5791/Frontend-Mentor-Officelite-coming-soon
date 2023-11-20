@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "type": "Basic",
+    "price": "Free",
+    "per": "Up to 5 users for free",
+    "f1": "Basic document collaboration",
+    "f2": "2 gb storage",
+    "f3": "Great security and support",
+    "utilityClass": "",
+    "utilityClassButton": "",
+    "utilityClassText": ""
+  },
+  {
+    "id": 2,
+    "type": "Pro",
+    "price": "$9.99",
+    "per": "Per user, billed monthly",
+    "f1": "All essential integrations",
+    "f2": "50 gb storage",
+    "f3": "More control and insights",
+    "utilityClass": "contrast",
+    "utilityClassButton": "button-white",
+    "utilityClassText": "text-white"
+  },
+  {
+    "id": 3,
+    "type": "Ultimate",
+    "price": "$19.99",
+    "per": "Per user, billed monthly",
+    "f1": "Robust work management",
+    "f2": "100 gb storage",
+    "f3": "VIP support",
+    "utilityClass": "",
+    "utilityClassButton": "",
+    "utilityClassText": ""
+  }
+]

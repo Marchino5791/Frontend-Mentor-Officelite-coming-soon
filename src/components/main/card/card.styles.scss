@@ -1,0 +1,124 @@
+@use '../../../mixins.scss' as *;
+
+.card {
+  background-color: #ffffff;
+  padding-block: 2.5rem;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  border-radius: var(--card-radius);
+  box-shadow: 0 0.25rem 1.25rem rgba($color: #747b95, $alpha: 0.2);
+
+  @include breakpoint('tablet') {
+    justify-items: start;
+    padding: 3rem;
+    text-align: left;
+  }
+
+  @include breakpoint('desktop') {
+    padding: 2.5rem 4rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .top {
+    h2 {
+      color: hsla(var(--primary-text), 1);
+      font-weight: bold;
+      line-height: 1.75rem;
+    }
+  }
+
+  .center-grid {
+    display: grid;
+    gap: 3.5rem;
+    line-height: 1.75rem;
+    margin-top: 2.5rem;
+
+    @include breakpoint('tablet') {
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    @include breakpoint('desktop') {
+      grid-template-columns: 1fr;
+      margin-block: 2rem;
+    }
+
+    &__expense {
+      color: hsla(var(--primary-text), 1);
+
+      &__price {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &__features {
+      color: hsla(var(--secondary-text), 1);
+      margin-bottom: 2rem;
+
+      @include breakpoint('tablet') {
+        margin-bottom: 0.5rem;
+      }
+
+      &__f:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .bottom {
+    button {
+      background-color: hsla(var(--accent), 0.1);
+      color: hsla(var(--accent), 1);
+
+      &:hover {
+        background-color: hsla(var(--accent), 0.2);
+      }
+    }
+
+    .button-white {
+      background-color: #ffffff;
+
+      &:hover {
+        background-color: #ffffff;
+        color: hsla(var(--accent-hover), 1);
+      }
+    }
+  }
+}
+
+//utility class
+.contrast {
+  background-color: hsla(var(--accent), 1);
+  background-image: url('../../../assets/home/bg-pattern-pricing.svg');
+  background-repeat: no-repeat;
+  background-size: 300%;
+  background-position-y: 100%;
+  background-position-x: center;
+
+  @include breakpoint('tablet-small') {
+    background-size: 200%;
+    background-position-y: 100%;
+  }
+
+  @include breakpoint('tablet') {
+    background-size: 155%;
+    background-position-y: 50%;
+    background-position-x: right;
+  }
+
+  @include breakpoint('desktop') {
+    background-size: 260%;
+    background-position-y: 102%;
+    background-position-x: center;
+  }
+}
+
+.text-white {
+  color: #ffffff !important;
+}
