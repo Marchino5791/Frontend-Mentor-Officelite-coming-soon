@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot top]()
+![Screenshot top](https://github.com/Marchino5791/Frontend-Mentor-Officelite-coming-soon/blob/main/Screenshot%20top.png)
 ![Screenshot bottom]()
 ![Screenshot inner]()
 
