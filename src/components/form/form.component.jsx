@@ -84,7 +84,7 @@ export const Form = () => {
         <summary className="radios" id="pack">
           <input
             type="radio"
-            name="item"
+            name="pack"
             id="basic"
             title="Basic Pack"
             value="Free"
@@ -92,41 +92,32 @@ export const Form = () => {
           />
           <input
             type="radio"
-            name="item"
+            name="pack"
             id="pro"
             title="Pro Pack"
             value="$9.99"
           />
           <input
             type="radio"
-            name="item"
+            name="pack"
             id="ultimate"
             title="Ultimate Pack"
             value="$19.99"
           />
         </summary>
         <ul className="list">
-          <li
-            className={isActive == 1 ? 'active' : ''}
-            onClick={() => handleClick(1)}
-          >
-            <label htmlFor="basic">
+          <li className={isActive == 1 ? 'active' : ''}>
+            <label htmlFor="basic" onClick={() => handleClick(1)}>
               Basic Pack<span>Free</span>
             </label>
           </li>
-          <li
-            className={isActive == 2 ? 'active' : ''}
-            onClick={() => handleClick(2)}
-          >
-            <label htmlFor="pro">
+          <li className={isActive == 2 ? 'active' : ''}>
+            <label htmlFor="pro" onClick={() => handleClick(2)}>
               Pro Pack<span>$9.99</span>
             </label>
           </li>
-          <li
-            className={isActive == 3 ? 'active' : ''}
-            onClick={() => handleClick(3)}
-          >
-            <label htmlFor="ultimate">
+          <li className={isActive == 3 ? 'active' : ''}>
+            <label htmlFor="ultimate" onClick={() => handleClick(3)}>
               Ultimate Pack<span>$19.99</span>
             </label>
           </li>
