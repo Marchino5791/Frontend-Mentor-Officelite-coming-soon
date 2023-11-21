@@ -10,16 +10,17 @@ function App() {
     <div className="app">
       <Routes>
         <Route
-          exact
-          path="/Frontend-Mentor-Officelite-coming-soon"
+          path="/Frontend-Mentor-Officelite-coming-soon/"
           element={<Logo />}
         >
           <Route
-            exact
-            path="/Frontend-Mentor-Officelite-coming-soon"
+            path="/Frontend-Mentor-Officelite-coming-soon/"
             element={<Home />}
           />
-          <Route path="/singUp" element={<SingUp />} />
+          <Route
+            path="/Frontend-Mentor-Officelite-coming-soon/singUp"
+            element={<SingUp />}
+          />
         </Route>
       </Routes>
     </div>
