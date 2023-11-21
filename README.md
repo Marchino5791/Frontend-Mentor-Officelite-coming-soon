@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Marchino5791/Frontend-Mentor-Officelite-coming-soon](https://github.com/Marchino5791/Frontend-Mentor-Officelite-coming-soon)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://marchino5791.github.io/Frontend-Mentor-Officelite-coming-soon/](https://marchino5791.github.io/Frontend-Mentor-Officelite-coming-soon/)
 
 ## My process
 
