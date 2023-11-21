@@ -9,8 +9,16 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<Logo />}>
-          <Route path="/" element={<Home />} />
+        <Route
+          exact
+          path="/Frontend-Mentor-Officelite-coming-soon"
+          element={<Logo />}
+        >
+          <Route
+            exact
+            path="/Frontend-Mentor-Officelite-coming-soon"
+            element={<Home />}
+          />
           <Route path="/singUp" element={<SingUp />} />
         </Route>
       </Routes>
