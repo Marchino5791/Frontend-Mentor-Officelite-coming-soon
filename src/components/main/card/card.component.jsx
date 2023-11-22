@@ -30,9 +30,11 @@ export const Card = ({ text }) => {
         </div>
       </div>
       <div className="bottom">
-        <Link to="/Frontend-Mentor-Officelite-coming-soon/singUp">
-          <button className={utilityClassButton}>Try for Free</button>
-        </Link>
+        <button className={utilityClassButton}>
+          <Link to="/Frontend-Mentor-Officelite-coming-soon/singUp">
+            Try for Free
+          </Link>
+        </button>
       </div>
     </div>
   )
