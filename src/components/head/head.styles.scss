@@ -1,7 +1,7 @@
 @use '../../mixins.scss' as *;
 
 header {
-  margin-top: 1.5rem;
+  margin-inline: 1.5rem;
 
   @include breakpoint('tablet-small') {
     margin-inline: 2.5rem;
@@ -28,6 +28,7 @@ header {
 
       @include breakpoint('tablet') {
         text-align: left;
+        flex: 50%;
       }
 
       h1 {

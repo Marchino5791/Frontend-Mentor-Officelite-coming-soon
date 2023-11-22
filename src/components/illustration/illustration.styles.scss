@@ -3,6 +3,14 @@
 .title-container__img {
   flex: 50%;
 
+  @include breakpoint('tablet') {
+    margin-right: -14px;
+  }
+
+  @include breakpoint('desktop') {
+    margin-right: -22px;
+  }
+
   img {
     width: 55%;
     margin-inline: auto;
@@ -10,12 +18,12 @@
 
     @include breakpoint('tablet') {
       width: 100%;
-      padding-left: 4rem;
+      padding-left: 3.94rem;
       margin-bottom: 0;
     }
 
     @include breakpoint('desktop') {
-      padding-left: 5.9375rem;
+      padding-left: 5.94rem;
     }
   }
 }
